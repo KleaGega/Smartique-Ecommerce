@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function __construct()
     {
-		!(is_logged_in()) ?: redirect('/');
+	    !(is_logged_in()) ?: redirect('/');
     }
 
     public function register(): View
